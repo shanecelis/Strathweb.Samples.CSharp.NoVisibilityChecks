@@ -10,7 +10,7 @@ namespace Compiler
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static int Main(string[] args)
         {
 
           var netstandardDllDirectory = "/Users/shane/Downloads/netstandard.library.2.0.3/build/netstandard2.0/ref";
@@ -51,7 +51,9 @@ namespace Compiler
                   {
                     Console.WriteLine(diagnostic.ToString());
                   }
+                  return 1;
                 }
+                return 0;
             //     ms.Seek(0, SeekOrigin.Begin);
             //     var assembly = Assembly.Load(ms.ToArray());
             //     assembly.EntryPoint.Invoke(null, new object[] { new string[0] });

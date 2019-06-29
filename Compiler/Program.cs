@@ -43,7 +43,7 @@ namespace Compiler
 
             // using (var ms = new MemoryStream())
             // {
-                var cr = compilation.Emit("behind-the-veil.dll");
+                var cr = compilation.Emit("BehindTheVeil.dll");
                 //If our compilation failed, we can discover exactly why.
                 if(!cr.Success)
                 {

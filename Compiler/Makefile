@@ -6,4 +6,4 @@ BehindTheVeil.dll:
 	dotnet run
 
 install: BehindTheVeil.dll
-	cp BehindTheVeil.dll ~/unity/rxnet-trial-proj/Assets/BehindTheVeil.dll
+	cp BehindTheVeil.dll ../../Assets/BehindTheVeil.dll
